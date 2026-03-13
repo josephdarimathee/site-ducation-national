@@ -1,0 +1,61 @@
+{% load static tailwind_tags %}
+ {% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>{% block title %}Mon Site Éducatif{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+	{% tailwind_css %}
+</head>
+<body class="bg-gray-50 font-serif" style=" background-image: url('{% static 'images/Faculte_de_droit.jpg' %}'); background-size: cover; background-attachment: fixed;">
+
+    <!-- Barre supérieure -->
+    <div class="bg-green-900 text-white text-sm py-2 px-6 flex justify-between">
+        <span class=""> +1 (234) 567 89 00</span>
+        <span class=""> 2824 Chestnut St, Brazzaville, Congo</span>
+    </div>
+
+    <!-- Navbar principale -->
+    <header class="bg-green-800 text-white shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-green-800 font-bold text-xs text-center leading-tight fa fa-graduation-cap">
+                    <br><span class="text-xs"></span>
+                </div>
+            </div>
+
+            <!-- Liens -->
+            <ul class="hidden md:flex gap-8 text-sm font-semibold">
+                <li><a href="/" class="hover:text-yellow-300 transition-colors">Accueil</a></li>
+                <li><a href="/about/" class="hover:text-yellow-300 transition-colors">À propos</a></li>
+                <li><a href="/academique/" class="hover:text-yellow-300 transition-colors">Académique</a></li>
+                <li><a href="/campus/" class="hover:text-yellow-300 transition-colors">Campus</a></li>
+                <li><a href="/actualite/" class="hover:text-yellow-300 transition-colors">Actualités</a></li>
+                <li><a href="/contact/" class="hover:text-yellow-300 transition-colors">Contact</a></li>
+            </ul>
+
+            <!-- Bouton -->
+            <a href="/contact/" class="border-2 border-white text-white px-4 py-2 text-sm font-bold hover:bg-white hover:text-green-800 transition-colors rounded">
+                Nous contacter
+            </a>
+        </nav>
+    </header>
+
+    {% block hero %}{% endblock %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-6">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Mon Site Éducatif Congolais. Tous droits réservés.
+        </div>
+    </footer>
+
+</body>
+</html>

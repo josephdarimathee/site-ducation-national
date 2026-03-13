@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+ {% load static%} 
+
+ {% block title %}À propos{% endblock%} 
+ 
+ {% block hero %}
+<section class="bg-gray-100">
+  <div
+    class="container mx-auto px-6 flex flex-col md:flex-row items-center min-h-96"
+  >
+    <div class="flex-1 py-16 pr-8">
+      <h1 class="text-5xl font-extrabold text-green-900 leading-tight mb-4">
+        À propos de nous
+      </h1>
+      <div class="w-12 h-1 bg-yellow-500 mb-6"></div>
+      <p class="text-gray-600 text-lg mb-8 max-w-md">
+        Nous sommes une école d'arts et de sciences située à Brazzaville, Congo.
+        Notre mission est de fournir une éducation de qualité et de préparer nos
+        étudiants à un avenir prometteur Carolina is one of the leading arts &
+        science colleges in the USA. It was founded back in 1990. The history of
+        the Carolina College of Arts and Science begins with the founding of the
+        college by John Gilstone, a prominent resident of Columbia. We are a
+        vibrant accredited learning institution with a big choice of
+        undergraduate and graduate degree programs designed for working
+        professionals.
+      </p>
+      <div class="flex gap-4">
+        <a
+          href="#"
+          class="bg-green-800 hover:bg-green-700 text-white font-bold px-6 py-3 rounded transition-colors"
+        >
+          En savoir plus
+        </a>
+        <a
+          href="#"
+          class="flex items-center gap-2 text-gray-700 font-bold hover:text-green-800 transition-colors"
+        >
+          → Contactez-nous
+        </a>
+      </div>
+    </div>
+
+    <div class="flex-1 h-full w-full">
+      <img
+        src="{% static 'images/Congo-Brazzaville.jpg' %}"
+        alt="Notre école"
+        class="w-full h-96 object-cover border border-gray-300 rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</section>
+{% endblock %}
+ {% block content %}
+
+<main>
+    <div class="" id="nos programme grid">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded shadow">
+                <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 1" class="w-20 h-20 mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-4">Programme 1</h3>
+                <p>Description du programme 1.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 2" class="w-20 h-20 mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-4">Programme 2</h3>
+                <p>Description du programme 2.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 3" class="w-20 h-20 mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-4">Programme 3</h3>
+                <p>Description du programme 3.</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+{% endblock %}

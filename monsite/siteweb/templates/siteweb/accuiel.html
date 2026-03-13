@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block hero %}
+
+
+<section class="bg-gray-100">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center min-h-96">
+
+        
+        <div class="flex-1 py-16 pr-8">
+            <h1 class="text-5xl font-extrabold text-green-900 leading-tight mb-4">
+                Bienvenue sur<br>
+                <span class="text-yellow-500">Notre École !</span>
+            </h1>
+            <div class="w-12 h-1 bg-yellow-500 mb-6"></div>
+            <p class="text-gray-600 text-lg mb-8 max-w-md">
+                École d'arts et de sciences à Brazzaville, Congo. 
+                Des possibilités infinies et un avenir prometteur commencent ici !
+            </p>
+            <div class="flex gap-4">
+                <a href="#" class="bg-green-800 hover:bg-green-700 text-white font-bold px-6 py-3 rounded transition-colors">
+                    Voir les admissions
+                </a>
+                <a href="#" class="flex items-center gap-2 text-gray-700 font-bold hover:text-green-800 transition-colors">
+                    → Académique
+                </a>
+            </div>
+        </div>
+
+       
+        <div class="flex-1 h-full w-full">
+            <img src="{% static 'images/Congo-Brazzaville.jpg' %}" 
+                 alt="Étudiants" 
+                 class="w-full h-96 object-cover border border-gray-300 rounded-lg shadow-lg">
+        </div>
+
+    </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main class="bg-white p-6">
+<section class="bg-white">
+  <div
+    class="container mx-auto px-6 flex flex-col md:flex-row items-center min-h-96"
+  >
+    <div class="flex-1 py-16 pr-8">
+      <h1 class="text-5xl font-extrabold text-green-900 leading-tight mb-4">
+        À propos de nous
+      </h1>
+      <div class="w-12 h-1 bg-yellow-500 mb-6"></div>
+      <p class="text-gray-600 text-lg mb-8 max-w-md">
+        Nous sommes une école d'arts et de sciences située à Brazzaville, Congo.
+        Notre mission est de fournir une éducation de qualité et de préparer nos
+        étudiants à un avenir prometteur Carolina is one of the leading arts &
+        science colleges in the USA. It was founded back in 1990. The history of
+        the Carolina College of Arts and Science begins with the founding of the
+        college by John Gilstone, a prominent resident of Columbia. We are a
+        vibrant accredited learning institution with a big choice of
+        undergraduate and graduate degree programs designed for working
+        professionals.
+      </p>
+      <div class="flex gap-4">
+        <a
+          href="#"
+          class="bg-green-800 hover:bg-green-700 text-white font-bold px-6 py-3 rounded transition-colors"
+        >
+          En savoir plus
+        </a>
+        <a
+          href="#"
+          class="flex items-center gap-2 text-gray-700 font-bold hover:text-green-800 transition-colors"
+        >
+          → Contactez-nous
+        </a>
+      </div>
+    </div>
+
+    <div class="flex-1 h-full w-full">
+      <img
+        src="{% static 'images/Campus.jpg' %}"
+        alt="Notre école"
+        class="w-full h-96 object-cover border border-gray-300 rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</section>
+<div class="" id="nos programme grid">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded shadow">
+                <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 1" class="w-20 h-20 mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-4">Programme 1</h3>
+                <p>Description du programme 1.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 2" class="w-20 h-20 mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-4">Programme 2</h3>
+                <p>Description du programme 2.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 3" class="w-20 h-20 mb-4 rounded-full">
+                <h3 class="text-xl font-bold mb-4">Programme 3</h3>
+                <p>Description du programme 3.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-gray-100 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-extrabold text-green-900 leading-tight mb-4"> Vie au Campus </h1>
+            <div class=" container mx-auto  w-12 h-1 text-center bg-green-900 mb-6"></div>
+            <p class="text-lg">Découvrez notre environnement d'apprentissage dynamique et inspirant.</p>
+        </div>
+
+        <div class="mt-4">
+        
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+            <div class="mt-4" id=" grid">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded shadow">
+                        <img src="{% static 'images/vie-universitaire.jpg' %}" alt="Image du service 1" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-bold mb-4">Service 1</h3>
+                        <p>Description du service 1.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <img src="{% static 'images/etudiant.jpg' %}" alt="Image du service 3" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-bold mb-4">Service 2</h3>
+                        <p>Description du service 2.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <img src="{% static 'images/Faculte_de_droit.jpg' %}" alt="Image du service 3" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-bold mb-4">Service 3</h3>
+                        <p>Description du service 3.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </ul>
+    </div>
+        
+    </div>
+
+    <section class="bg-green-800 m-4">
+    <div class="flex flex-col md:flex-row items-stretch min-h-96 shadow-lg ">
+        
+        <!-- Image gauche -->
+        <div class="md:w-1/2">
+            <img src="{% static 'images/Congo-Brazzaville.jpg' %}" 
+                 alt="Étudiants" 
+                 class="w-full h-full object-cover" style="min-height: 380px;">
+        </div>
+
+        <!-- Contenu droite -->
+        <div class="md:w-1/2 bg-gray-50 flex flex-col justify-center px-12 py-16 " id="grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 1" class="w-20 h-20 mb-4 rounded-full">
+                    <h3 class="text-xl font-bold mb-4">Programme 1</h3>
+                    <p>Description du programme 1.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 2" class="w-20 h-20 mb-4 rounded-full">
+                    <h3 class="text-xl font-bold mb-4">Programme 2</h3>
+                    <p>Description du programme 2.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 3" class="w-20 h-20 mb-4 rounded-full">
+                    <h3 class="text-xl font-bold mb-4">Programme 3</h3>
+                    <p>Description du programme 3.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="{% static 'images/image_3.jpg' %}" alt="Image du programme 4" class="w-20 h-20 mb-4 rounded-full">
+                    <h3 class="text-xl font-bold mb-4">Programme 4</h3>
+                    <p>Description du programme 4.</p>
+                </div>
+             </div>
+            
+        </div>
+
+    </div>
+</section>
+
+
+
+     
+<script>
+
+let index = 0
+const slides = document.getElementById("slides")
+const total = slides.children.length
+
+function showSlide(){
+    slides.style.transform = `translateX(-${index * 100}%)`
+}
+
+document.getElementById("next").onclick = () => {
+
+    index++
+    if(index >= total){index = 0}
+
+    showSlide()
+}
+
+document.getElementById("prev").onclick = () => {
+
+    index--
+    if(index < 0){index = total - 1}
+
+    showSlide()
+}
+
+<!-- Carousel automatique -->
+setInterval(() => {
+
+    index++
+    if(index >= total){index = 0}
+
+    showSlide()
+
+},3000)
+
+</script>
+</main>
+<div class="container mx-auto p-10 py-48">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-10">
+            <div class="bg-white p-4 rounded shadow">
+                <h1 class="text-3xl font-bold text-green-800 mb-4">Campus</h1>
+                <h3 class="text-xl font-bold mb-4">Pourquoi etudie chez nous</h3>
+                <p>Nous offrons un environnement d'apprentissage dynamique et inspirant .</p>
+
+                <button>
+                    <a href="#" class="bg-green-800 hover:bg-green-700 text-white font-bold px-6 py-3 rounded transition-colors mt-4 inline-block">
+                        En savoir plus
+                    </a>
+
+                </button>
+                <button>
+                    <a href="#" class="bg-green-800 hover:bg-green-700 text-white font-bold px-6 py-3 rounded transition-colors mt-4 inline-block">
+                        En savoir plus
+                    </a>
+                    
+                </button>
+
+            </div>
+            
+        </div>
+        <!-- Ajoutez ici le contenu spécifique à la page Campus -->
+    </div>
+
+    <section class="bg-green-800 text-white py-12 text-center">
+    <h2 class="text-4xl font-extrabold mb-2">
+        Derniers <span class="text-yellow-500">Événements</span>
+    </h2>
+    <div class="w-12 h-1 bg-yellow-500 mx-auto mb-6"></div>
+    <p class="text-white font-semibold max-w-3xl mx-auto px-6">
+        Chaque mois, nous organisons diverses activités utiles pour les étudiants et les candidats. 
+        Nous vous conseillons de consulter notre calendrier régulièrement ! 
+        Découvrez les derniers événements de notre école ci-dessous.
+    </p>
+
+
+<!-- Carte Événement -->
+<section class="bg-green-800 m-4">
+    <div class="flex flex-col md:flex-row items-stretch min-h-96 shadow-lg ">
+        
+        <!-- Image gauche -->
+        <div class="md:w-1/2">
+            <img src="{% static 'images/Congo-Brazzaville.jpg' %}" 
+                 alt="Étudiants" 
+                 class="w-full h-full object-cover" style="min-height: 380px;">
+        </div>
+
+        <!-- Contenu droite -->
+        <div class="md:w-1/2 bg-gray-50 flex flex-col justify-center px-12 py-16 ">
+            <h3 class="text-3xl font-extrabold text-green-900 mb-4">
+                Nouveau Programme de Bourses
+            </h3>
+            <div class="w-10 h-1 bg-yellow-500 mb-6"></div>
+            <p class="text-gray-500 text-base mb-10 leading-relaxed">
+                Découvrez le nouveau Programme de Bourses conçu pour promouvoir 
+                la diversité et le respect mutuel au sein de notre école.
+            </p>
+            <a href="#" 
+               class="inline-flex items-center gap-2 border-2 border-yellow-500 text-green-900 font-bold px-6 py-3 hover:bg-yellow-500 hover:text-white transition-colors w-fit">
+                En savoir plus →
+            </a>
+        </div>
+
+    </div>
+</section>
+<section class="bg-green-800 m-4">
+    <div class="flex flex-col md:flex-row items-stretch min-h-96 shadow-lg ">
+        
+        <!-- Contenu droite -->
+        <div class="md:w-1/2 bg-gray-50 flex flex-col justify-center px-12 py-16 ">
+            <h3 class="text-3xl font-extrabold text-green-900 mb-4">
+                Nouveau Programme de Bourses
+            </h3>
+            <div class="w-10 h-1 bg-yellow-500 mb-6"></div>
+            <p class="text-gray-500 text-base mb-10 leading-relaxed">
+                Découvrez le nouveau Programme de Bourses conçu pour promouvoir 
+                la diversité et le respect mutuel au sein de notre école.
+            </p>
+            <a href="#" 
+               class="inline-flex items-center gap-2 border-2 border-yellow-500 text-green-900 font-bold px-6 py-3 hover:bg-yellow-500 hover:text-white transition-colors w-fit">
+                En savoir plus →
+            </a>
+        </div>
+
+        <!-- Image gauche -->
+        <div class="md:w-1/2">
+            <img src="{% static 'images/Congo-Brazzaville.jpg' %}" 
+                 alt="Étudiants" 
+                 class="w-full h-full object-cover" style="min-height: 380px;">
+        </div>
+
+        
+
+    </div>
+</section>
+<section class="bg-green-800 m-4">
+    <div class="flex flex-col md:flex-row items-stretch min-h-96 shadow-lg ">
+        
+        <!-- Image gauche -->
+        <div class="md:w-1/2">
+            <img src="{% static 'images/Congo-Brazzaville.jpg' %}" 
+                 alt="Étudiants" 
+                 class="w-full h-full object-cover" style="min-height: 380px;">
+        </div>
+
+        <!-- Contenu droite -->
+        <div class="md:w-1/2 bg-gray-50 flex flex-col justify-center px-12 py-16 ">
+            <h3 class="text-3xl font-extrabold text-green-900 mb-4">
+                Nouveau Programme de Bourses
+            </h3>
+            <div class="w-10 h-1 bg-yellow-500 mb-6"></div>
+            <p class="text-gray-500 text-base mb-10 leading-relaxed">
+                Découvrez le nouveau Programme de Bourses conçu pour promouvoir 
+                la diversité et le respect mutuel au sein de notre école.
+            </p>
+            <a href="#" 
+               class="inline-flex items-center gap-2 border-2 border-yellow-500 text-green-900 font-bold px-6 py-3 hover:bg-yellow-500 hover:text-white transition-colors w-fit">
+                En savoir plus →
+            </a>
+        </div>
+
+    </div>
+</section>
+</section>
+{% endblock %}
